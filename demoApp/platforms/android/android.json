@@ -1,0 +1,59 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"smartvideo\"><param name=\"android-package\" value=\"cordova.ve.smartvideo.smartvideo\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest/application": [
+            {
+              "xml": "<application tools:replace=\"android:hardwareAccelerated\" xmlns:tools=\"http://schemas.android.com/tools\" />",
+              "count": 1,
+              "mode": "merge",
+              "plugin": "cordova.ve.smartvideo",
+              "oldAttrib": {
+                "android:hardwareAccelerated": "true",
+                "android:icon": "@mipmap/ic_launcher",
+                "android:label": "@string/app_name",
+                "android:supportsRtl": "true",
+                "tools:replace": "android:hardwareAccelerated",
+                "xmlns:tools": "http://schemas.android.com/tools"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova.ve.smartvideo": {
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova.ve.smartvideo.smartvideo",
+      "file": "plugins/cordova.ve.smartvideo/www/smartvideo.js",
+      "pluginId": "cordova.ve.smartvideo",
+      "clobbers": [
+        "cordova.plugins.smartvideo"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova.ve.smartvideo": "1.0.0"
+  }
+}

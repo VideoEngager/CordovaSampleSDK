@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.ve.smartvideo" version="1.0.0">
+   <name>smartvideo</name>
+   <js-module name="smartvideo" src="www/smartvideo.js">
+      <clobbers target="cordova.plugins.smartvideo" />
+   </js-module>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="smartvideo">
+            <param name="android-package" value="cordova.ve.smartvideo.smartvideo" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/smartvideo.java" target-dir="src/cordova/ve/smartvideo" />
+      <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+        <application tools:replace="android:hardwareAccelerated" xmlns:tools="http://schemas.android.com/tools" />
+    </edit-config>
+    <framework src="com.videoengager:smartvideo-sdk:1.10.1" />
+    <framework src="build-extras.gradle" custom="true" type="gradleReference" />
+   </platform>
+</plugin>
+

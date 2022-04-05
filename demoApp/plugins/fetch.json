@@ -1,0 +1,10 @@
+{
+  "cordova.ve.smartvideo": {
+    "source": {
+      "type": "local",
+      "path": "C:\\Users\\valioman\\github\\CordovaSampleAndroid\\demoApp\\node_modules\\cordova.ve.smartvideo"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
