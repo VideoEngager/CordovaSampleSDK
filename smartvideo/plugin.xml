@@ -15,7 +15,7 @@
       <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
         <application tools:replace="android:hardwareAccelerated" xmlns:tools="http://schemas.android.com/tools" />
     </edit-config>
-    <framework src="com.videoengager:smartvideo-sdk:1.10.1" />
+    <framework src="com.videoengager:smartvideo-sdk:1.11.0" />
     <framework src="build-extras.gradle" custom="true" type="gradleReference" />
    </platform>
 </plugin>

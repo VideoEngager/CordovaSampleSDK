@@ -347,7 +347,7 @@ dependencies {
 
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    implementation "com.videoengager:smartvideo-sdk:1.10.1"
+    implementation "com.videoengager:smartvideo-sdk:1.11.0"
     // SUB-PROJECT DEPENDENCIES END
 }
 
