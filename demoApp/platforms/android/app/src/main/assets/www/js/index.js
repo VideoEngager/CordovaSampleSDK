@@ -33,11 +33,19 @@ function onDeviceReady() {
 function videocall(){
     const ve = cordova.plugins.smartvideo;
     ve.toast('Starting Video Call...');
-    ve.videoCall("");
+    var dynamicSettings = {
+        NickName:"My User NickName",
+        Mail : "myusermail@mail.com"
+    };
+    ve.videoCall(JSON.stringify(dynamicSettings));
 }
 
 function audiocall(){
     const ve = cordova.plugins.smartvideo;
     ve.toast('Starting Audio only Call...');
-    ve.audioCall("");
+    var dynamicSettings = {
+        NickName:"My User NickName",
+        Mail : "myusermail@mail.com"
+    };
+    ve.audioCall(JSON.stringify(dynamicSettings));
 }
