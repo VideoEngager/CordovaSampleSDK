@@ -13,12 +13,16 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "devDependencies": {
-    "cordova-android": "^10.1.1",
+    "cordova-android": "^9.1.0",
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-ios-camera-permissions": "^1.2.0",
     "cordova.ve.smartvideo": "file:../smartvideo"
   },
   "cordova": {
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ],
     "plugins": {
       "cordova.ve.smartvideo": {}

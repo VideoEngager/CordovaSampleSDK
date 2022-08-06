@@ -1,8 +1,24 @@
 {
+  "cordova-plugin-add-swift-support": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-add-swift-support"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-ios-camera-permissions": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ios-camera-permissions"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
   "cordova.ve.smartvideo": {
     "source": {
       "type": "local",
-      "path": "C:\\Users\\valioman\\github\\CordovaSampleAndroid\\demoApp\\node_modules\\cordova.ve.smartvideo"
+      "path": "/Users/slavbase/Documents/Cordova projects/CordovaSampleSDK/demoApp/node_modules/cordova.ve.smartvideo"
     },
     "is_top_level": true,
     "variables": {}

@@ -1,0 +1,20 @@
+PODS:
+  - SmartVideo (1.12.0):
+    - WebRTC-lib
+  - WebRTC-lib (103.0.0)
+
+DEPENDENCIES:
+  - SmartVideo
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SmartVideo
+    - WebRTC-lib
+
+SPEC CHECKSUMS:
+  SmartVideo: 4e99828e8b5216d28033a627d3dafe9457247820
+  WebRTC-lib: a5016d943e92f2543ca113731c0122eef8896971
+
+PODFILE CHECKSUM: f5c2910e5afac53fd0c6baa1989133cd6a085fe4
+
+COCOAPODS: 1.11.3
