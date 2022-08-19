@@ -1,0 +1,119 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "*-Info.plist": {
+        "parents": {
+          "NSCameraUsageDescription": [
+            {
+              "xml": "<string>This app needs camera access</string>",
+              "count": 1
+            }
+          ],
+          "NSMicrophoneUsageDescription": [
+            {
+              "xml": "<string>This app needs microphone access</string>",
+              "count": 1
+            }
+          ],
+          "NSPhotoLibraryAddUsageDescription": [
+            {
+              "xml": "<string>This app needs write-access to photo library</string>",
+              "count": 1
+            }
+          ],
+          "NSPhotoLibraryUsageDescription": [
+            {
+              "xml": "<string>This app needs read/write-access photo library access</string>",
+              "count": 1
+            }
+          ],
+          "CFBundleURLTypes": [
+            {
+              "xml": "<array><dict><key>CAMERA_USAGE_DESCRIPTION</key><string>$(PRODUCT_NAME) uses your camera to make and receive video calls with/from support agents. Be aware that support team may record your calls. </string><key>PHOTOLIBRARY_USAGE_DESCRIPTION</key><string>$(PRODUCT_NAME) will use your photos only if you select to send/receive photo files.</string><key>MICROPHONE_USAGE_DESCRIPTION</key><string>$(PRODUCT_NAME) uses your microphone to make and receive voice and video calls with/from support agents. Be aware that support team may record your calls. </string></dict></array>",
+              "count": 1
+            }
+          ],
+          "UIBackgroundModes": [
+            {
+              "xml": "<array><string>fetch</string><string>remote-notification</string><string>voip</string></array>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"CordovaCall\"><param name=\"ios-package\" value=\"CordovaCall\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"smartvideo\"><param name=\"ios-package\" value=\"SmartVideoCordova\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"deployment-target\" value=\"13.0\" />",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    },
+    "cordova-plugin-ios-camera-permissions": {
+      "CAMERA_USAGE_DESCRIPTION": "This app needs camera access",
+      "MICROPHONE_USAGE_DESCRIPTION": "This app needs microphone access",
+      "PHOTOLIBRARY_ADD_USAGE_DESCRIPTION": "This app needs write-access to photo library",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "This app needs read/write-access photo library access",
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    },
+    "cordova-plugin-callkit": {
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    },
+    "cordova.ve.smartvideo": {
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "cordova-plugin-callkit.VoIPPushNotification",
+      "file": "plugins/cordova-plugin-callkit/www/VoIPPushNotification.js",
+      "pluginId": "cordova-plugin-callkit",
+      "clobbers": [
+        "VoIPPushNotification"
+      ]
+    },
+    {
+      "id": "cordova-plugin-callkit.CordovaCall",
+      "file": "plugins/cordova-plugin-callkit/www/CordovaCall.js",
+      "pluginId": "cordova-plugin-callkit",
+      "clobbers": [
+        "cordova.plugins.CordovaCall"
+      ]
+    },
+    {
+      "id": "cordova.ve.smartvideo.smartvideo",
+      "file": "plugins/cordova.ve.smartvideo/www/smartvideo.js",
+      "pluginId": "cordova.ve.smartvideo",
+      "clobbers": [
+        "cordova.plugins.smartvideo"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova-plugin-ios-camera-permissions": "1.2.0",
+    "cordova-plugin-callkit": "1.0.0",
+    "cordova.ve.smartvideo": "1.1.0"
+  }
+}

@@ -7,6 +7,9 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    },
     "cordova.ve.smartvideo": {
       "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
     }

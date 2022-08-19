@@ -18,5 +18,44 @@
     <framework src="com.videoengager:smartvideo-sdk:1.12.0" />
     <framework src="build-extras.gradle" custom="true" type="gradleReference" />
    </platform>
+   <platform name="ios">
+       <config-file parent="/*" target="config.xml">
+           <feature name="smartvideo">
+               <param name="ios-package" value="SmartVideoCordova" />
+               <param name="onload" value="true" />
+           </feature>
+           <preference name="deployment-target" value="13.0" />
+       </config-file>
+       
+       <source-file src="src/ios/SmartVideoCordova.swift" />
+       
+       <dependency id="cordova-plugin-add-swift-support" />
+       <dependency id="cordova-plugin-callkit" />
+       
+       <resource-file src="src/ios/SmartVideo-Info.plist" target=""/>
+       
+       <config-file target="*-Info.plist" parent="CFBundleURLTypes">
+           <array>
+               <dict>
+                   <key>CAMERA_USAGE_DESCRIPTION</key>
+                   <string>$(PRODUCT_NAME) uses your camera to make and receive video calls with/from support agents. Be aware that support team may record your calls. </string>
+                   <key>PHOTOLIBRARY_USAGE_DESCRIPTION</key>
+                   <string>$(PRODUCT_NAME) will use your photos only if you select to send/receive photo files.</string>
+                   <key>MICROPHONE_USAGE_DESCRIPTION</key>
+                   <string>$(PRODUCT_NAME) uses your microphone to make and receive voice and video calls with/from support agents. Be aware that support team may record your calls. </string>
+               </dict>
+           </array>
+       </config-file>
+
+       
+       <podspec>
+         <config>
+           <source url="https://github.com/CocoaPods/Specs.git"/>
+         </config>
+         <pods use-frameworks="true">
+           <pod name="SmartVideo" branch="development" git="https://github.com/VideoEngager/SmartVideo-iOS-SDK"/>
+         </pods>
+       </podspec>
+   </platform>
 </plugin>
 

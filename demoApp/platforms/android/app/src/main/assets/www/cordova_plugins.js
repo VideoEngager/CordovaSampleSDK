@@ -10,6 +10,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     }
   ];
   module.exports.metadata = {
-    "cordova.ve.smartvideo": "1.0.0"
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova.ve.smartvideo": "1.1.0"
   };
 });

@@ -38,6 +38,9 @@
     }
   },
   "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
+    },
     "cordova.ve.smartvideo": {
       "PACKAGE_NAME": "com.videoengager.cordova.demoapp"
     }
@@ -54,6 +57,7 @@
     }
   ],
   "plugin_metadata": {
-    "cordova.ve.smartvideo": "1.0.0"
+    "cordova-plugin-add-swift-support": "2.0.2",
+    "cordova.ve.smartvideo": "1.1.0"
   }
 }

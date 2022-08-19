@@ -1,8 +1,32 @@
 {
-  "cordova.ve.smartvideo": {
+  "cordova-plugin-add-swift-support": {
     "source": {
       "type": "registry",
-      "id": "file:../smartvideo"
+      "id": "cordova-plugin-add-swift-support@^2.0.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ios-camera-permissions": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ios-camera-permissions"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-callkit": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-callkit"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova.ve.smartvideo": {
+    "source": {
+      "type": "local",
+      "path": "/Users/slavbase/Documents/Cordova projects/CordovaSampleSDK/demoApp/node_modules/cordova.ve.smartvideo"
     },
     "is_top_level": true,
     "variables": {}
